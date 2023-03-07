@@ -1,0 +1,72 @@
+/* RESETS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html, body {
+    height: 100%;
+  }
+  
+  
+  body {
+    min-height: 100%;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+      }
+  main {
+    display: flex;
+    flex: 1 1 0;
+    height: 100%;
+ }
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 10% 0 0;
+    background-color: steelblue;
+    
+
+}
+  
+  nav ul  {
+    display: inline-flex;
+    justify-content: space-between;
+    list-style: none;
+    
+    
+   
+  }
+
+  nav ul li {
+    padding: 10%;
+
+  }
+
+  /* Custom Styles */
+main {
+
+}
+nav a:hover {
+    font-size: 150%;
+    
+}
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    background-color: steelblue;
+}
+/* ------------------ */
+
