@@ -12,38 +12,57 @@
 
 <body>
     <!-- header contains title/banner/navigation -->
+    
     <header class="header">
-         <h1 id="main_title">Portfolio</h1>
+         <h1 id="main_title">Austen Tangen</h1>
          <!--use # to call a class and a href to establish a link to an element within the page  -->
         <nav class="navbar">
             <ul>
-                <li><a href="#enter_class">buttons</a></li>
-                <li><a href="#enter_class">buttons</a></li>
-                <li><a href="#enter_class">buttons</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
                 
             </ul>
         </nav>
     </header>
+    <!-- <div>
+        <img id="banner2" src="assets/images/banner.png">
+    </div> -->
+        
     <main>
-    <!-- use this for the main picture of the page, the image can be loaded through css -->
-        <figure class="your_face_here"></figure> 
+    
+        <aside id="about-me">
+            <div>
+                <img src="assets/images/profile.png" alt="picture of the author">
+            </div>
+            <h3>About Me</h3>
+            <p class="bio">My name is austen and I'm currently enrolled in the Rutger's Coding Bootcamp. I have a background in graphic design and I'm looking to further my skillset by learning MERN stack development. Outside of web design, I'm an avid practicioner of Muay Thai and have a fantastic mustache.</p>
+        </aside>
 
     <!-- show off your portfolio work here -->
-         <section class="content">
-            <article class="portfolio_work_1">
-                <img src="" alt="picture of your work"  class="float-left" />
-                <h2>Title of your work</h2>
-                <a href="https//:linktoyourgithubdeploy.com">the text of your link</a>
+         <section id="projects">
+            <article class="portfolio-work-1">
+                <div><a href="https://github.com/AuTangen/prework-study-guide">
+                <img id="prework" src="assets/images/prework.png" alt="picture of your work"  />
+                </a>
+                </div>
+                <h2>Prework Study Guide</h2>
                 <p>
-                    a paragraph explaining your work
+                    A basic HTML webpage we built during the course prework to store notes and useful links.
                 </p>
             </article>
 
         </section>
     </main>
 
-    <footer>
-        <p id="copyright">© 2023 this is a footer</p>
+    <footer id="contact">
+        <h3>Contact Info:</h3>
+        <ul>
+            <li>atangen2406@gmail.com</li>
+            <li><a href="https://github.com/AuTangen">GitHub</a></li>
+
+        </ul>
     </footer>
+    
 </body>
 </html>

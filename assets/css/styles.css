@@ -1,3 +1,9 @@
+/* Global Variables */
+:root {
+  --main-color: rgb(20 83 100);
+  --back-color: white;
+}
+
 /* RESETS */
 *{
     margin: 0;
@@ -15,7 +21,7 @@ html, body {
     line-height: 1;
     display: flex;
     flex-direction: column;
-    background-color: whitesmoke;
+    background-color:var(--back-color);
       }
   main {
     display: flex;
@@ -24,29 +30,32 @@ html, body {
  }
 a {
     text-decoration: none;
-    color: whitesmoke;
+    color:var(--back-color);
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5% 10% 0 0;
-    background-color: steelblue;
+    padding: 2% 10% 0 0;
+    background-color:var(--main-color);
+    
     
 
 }
   
   nav ul  {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     list-style: none;
-    
+    width: 150%;
     
    
   }
 
   nav ul li {
-    padding: 10%;
+    padding: 2%;
+    display: flex;
+    
 
   }
 
@@ -54,9 +63,58 @@ header {
 main {
 
 }
+
+header h1 {
+  color:var(--back-color);
+  padding: 5%;
+}
 nav a:hover {
-    font-size: 150%;
+    font-size: 120%;    
+}
+
+/* .banner2 {
+    width:auto;
+    } */
+
+
+  .portfoli0-work-1 {
+    display:flex;
     
+  }
+
+  #prework {
+    width: 50%;
+    margin: 1%;
+    border: 4px solid var(--main-color);
+    border-radius: 40px;
+  }
+
+#prework:hover {
+  width: 55%;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  
+  width: 20%;
+  border-right: 1px solid var(--main-color) ;
+  
+  
+}
+
+aside div {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     padding: 2%;
+     
+}
+
+aside h3, .bio {
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
+
 }
 
 
@@ -64,9 +122,36 @@ nav a:hover {
 footer {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 2%;
-    background-color: steelblue;
+    justify-content: left;
+    padding: 2px;
+    background-color:var(--main-color);
+    color: var(--back-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#contact ul li {
+  display: flex;
+  list-style: NONE;
+  padding: 2%;
 }
 /* ------------------ */
 
+/* media queries */
+
+@media screen and (max-width: 768px) {
+  header,
+  main, nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+
+  section {
+    padding-right: 0;
+  }
+
+  aside {
+    width: 100%;
+    text-align: center;
+  }
+}
